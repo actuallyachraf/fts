@@ -1,5 +1,7 @@
 package fts
 
+// Ported from python as is with modification from @agonopol
+
 import (
 	"bytes"
 )

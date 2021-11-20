@@ -144,12 +144,12 @@ func Test5B(t *testing.T) {
 }
 
 func TestVocal(t *testing.T) {
-	f, err := os.Open("corpus/in.txt")
+	f, err := os.Open("testdata/in.txt")
 	if err != nil {
 		t.Fatal("failed to open test file with error :", err)
 	}
 	in := bufio.NewReader(f)
-	f, err = os.Open("corpus/out.txt")
+	f, err = os.Open("testdata/out.txt")
 	if err != nil {
 		t.Fatal("failed to open test file with error :", err)
 	}
