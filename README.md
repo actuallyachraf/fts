@@ -2,7 +2,7 @@
 
 `fts` is a full-text search package in pure Go.
 
-## Design
+## Design (WIP)
 
 While the goal is to build a search engine this project isn't designed for production uses.
 
