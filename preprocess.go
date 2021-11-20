@@ -64,5 +64,13 @@ func Tokenize(text string) []string {
 func Normalize(tokens []string) []string {
 	lower := Map(tokens, strings.ToLower)
 	stops := Filter(lower, IsStopWord)
-	return stops
+	stemmed := Map(stops, Stem)
+	return stemmed
+}
+
+// Preprocess tokenize and normalize tokens.
+func Preprocess(text string) []string {
+	tokens := Tokenize(text)
+	normalized := Normalize(tokens)
+	return normalized
 }

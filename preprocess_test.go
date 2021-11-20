@@ -19,7 +19,7 @@ func TestPreprocess(t *testing.T) {
 	t.Run("TestNormalize", func(t *testing.T) {
 		text := "A donut on a glass plate. Only the donuts."
 		tokens := Normalize(Tokenize(text))
-		expected := []string{"donut", "glass", "plate", "only", "donuts"}
+		expected := []string{"donut", "glass", "plate", "onli", "donut"}
 		if len(tokens) == 0 {
 			t.Fatal("test failed got 0 tokens")
 		}
